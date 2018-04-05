@@ -1,5 +1,5 @@
 var Board = require('firmata')
-var arduino = new Board('COM8');
+var arduino = new Board('/dev/ttyACM0');
 var io = require('./io')
 
 arduino.on('ready', function(){
